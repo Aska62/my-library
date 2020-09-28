@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='reset.css'>
+    <link rel='stylesheet' href='style.css'>
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1 class='page_title'>Your Library</h1>
+    </header>
+    <section class='main'>
+        <button class='addBtn'>Add New Book</button>
+        <div class='books_container'>
+             
+        </div>
+    </section>
+    <div class='modal'>
+        <div class='modal_content'>
+            <h2 class='modal_heading'>Add a New Book to Your Library!</h2>
+            </h2>
+            <div class='input_fields'>
+                <div>
+                    <label for='titleInput'>Title :  </label>
+                    <input class='text_input' type='text' id='titleInput' name='titleInput' placeholder='Please input title'>
+                </div>
+                <div>
+                    <label for='authorInput'>Author: </label>
+                    <input class='text_input' type='text' id='authorInput' name='authorInput' placeholder='Please input the author'>
+                </div>
+                <div>
+                    <label for='pagesInput'>Pages : </label>
+                    <input class='num_input' type='number' id='pagesInput' name='pagesInput' placeholder='Please input number of pages'>
+                </div>
+                <div>
+                    <input type='radio' id='read' name='readOrNot' value='true'>
+                    <label for='read'>Read</label>
+                    <input type='radio' id='notRead' name='readOrNot' value='false'>
+                    <label for='notRead'>Not read yet</label>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="submit">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        (c) Aska Dev. 2020
+    </footer>
+    <script src='library.js'></script>
+</body>
+</html>
